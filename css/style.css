@@ -212,12 +212,12 @@ h2 {
 .a-cris-submenu:hover {
   color: #9a3820; }
 
-/*.a-cris-submenu:hover {
-  color: white;
-}*/
-/*.a-cris-submenu:active {
-  color: white;
-}*/
+.a-cris-submenu:hover {
+  color: white; }
+
+.a-cris-submenu:active {
+  color: white; }
+
 .bts-sub {
   background: #9a3820;
   color: white; }

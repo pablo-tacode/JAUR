@@ -18,6 +18,11 @@ const confContainer = document.getElementById("conf-container");
 const tallContainer = document.getElementById("tall-container");
 const terContainer = document.getElementById("ter-container");
 const tvContainer = document.getElementById("tv-container");
+const principalSection = document.getElementById("principal-section");
+const cristinaSection = document.getElementById("cristina-section");
+const coursesSection = document.getElementById("courses-section");
+const coursesButton = document.getElementById("courses-button");
+const principalButton = document.getElementById("principal-button");
 
 window.onload = function(event) {
   if (window.matchMedia("only screen and (max-width: 993px)").matches) {
@@ -65,7 +70,18 @@ for (i = 0; i < btns.length; i++) {
   });
 }
 
-/*const confSect = () => {
+const coSection = () => {
+  principalSection.classList.add("hide");
+  cristinaSection.classList.add("hide");
+  coursesSection.classList.remove("hide");
+};
+
+coursesButton.addEventListener("click", coSection);
+
+const confSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   bioContainer.classList.add("hide");
   confContainer.classList.remove("hide");
   tallContainer.classList.add("hide");
@@ -80,6 +96,9 @@ for (i = 0; i < btns.length; i++) {
 confButton.addEventListener("click", confSect);
 
 const bioSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   bioContainer.classList.remove("hide");
   confContainer.classList.add("hide");
   tallContainer.classList.add("hide");
@@ -94,6 +113,9 @@ const bioSect = () => {
 bioButton.addEventListener("click", bioSect);
 
 const tallSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   bioContainer.classList.add("hide");
   confContainer.classList.add("hide");
   tallContainer.classList.remove("hide");
@@ -109,6 +131,11 @@ const tallSect = () => {
 tallButton.addEventListener("click", tallSect);
 
 const terSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   bioContainer.classList.add("hide");
   confContainer.classList.add("hide");
   tallContainer.classList.add("hide");
@@ -124,6 +151,9 @@ const terSect = () => {
 terButton.addEventListener("click", terSect);
 
 const tvSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   bioContainer.classList.add("hide");
   confContainer.classList.add("hide");
   tallContainer.classList.add("hide");
@@ -139,6 +169,9 @@ const tvSect = () => {
 tvButton.addEventListener("click", tvSect);
 
 const confsSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   biosButton.classList.remove("bts-sub");
   confsButton.classList.add("bts-sub");
   tallsButton.classList.remove("bts-sub");
@@ -153,6 +186,9 @@ const confsSect = () => {
 confsButton.addEventListener("click", confsSect);
 
 const biosSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   biosButton.classList.add("bts-sub");
   confsButton.classList.remove("bts-sub");
   tallsButton.classList.remove("bts-sub");
@@ -167,6 +203,9 @@ const biosSect = () => {
 biosButton.addEventListener("click", biosSect);
 
 const tallsSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   biosButton.classList.remove("bts-sub");
   confsButton.classList.remove("bts-sub");
   tallsButton.classList.add("bts-sub");
@@ -182,6 +221,11 @@ const tallsSect = () => {
 tallsButton.addEventListener("click", tallsSect);
 
 const tersSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   biosButton.classList.remove("bts-sub");
   confsButton.classList.remove("bts-sub");
   tallsButton.classList.remove("bts-sub");
@@ -197,6 +241,9 @@ const tersSect = () => {
 tersButton.addEventListener("click", tersSect);
 
 const tvsSect = () => {
+  cristinaSection.classList.remove("hide");
+  principalSection.classList.add("hide");
+  coursesSection.classList.add("hide");
   biosButton.classList.remove("bts-sub");
   confsButton.classList.remove("bts-sub");
   tallsButton.classList.remove("bts-sub");
@@ -209,7 +256,7 @@ const tvsSect = () => {
   tvContainer.classList.remove("hide");
 };
 
-tvsButton.addEventListener("click", tvsSect);*/
+tvsButton.addEventListener("click", tvsSect);
 
 /*jQuery("html").bind("click", function(e) {
   if (jQuery(e.target).closest(".navbar").length == 0) {
