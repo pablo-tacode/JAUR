@@ -254,16 +254,30 @@ h2 {
   text-decoration: none !important;
 }
 
-.a-cris-submenu:hover {
-  color: #9a3820;
-}
 //Para una sola page
+//.a-cris-submenu:hover ~ .bts-sub {
+// color: white;
+// background: #9a3820;
+//}
+
+//.a-cris-submenu:hover {
+// color: #9a3820;
+// background: white;
+//}
+
 .a-cris-submenu:hover {
   color: #9a3820;
+  background: white;
+}
+
+a.bts-sub:hover {
+  color: white !important;
+  background: #9a3820 !important;
 }
 
 .a-cris-submenu:active {
-  color: white;
+  color: white !important;
+  background: #9a3820 !important;
 }
 
 .bts-sub {
