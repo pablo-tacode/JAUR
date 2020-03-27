@@ -23,6 +23,8 @@ const cristinaSection = document.getElementById("cristina-section");
 const coursesSection = document.getElementById("courses-section");
 const coursesButton = document.getElementById("courses-button");
 const principalButton = document.getElementById("principal-button");
+const blogSection = document.getElementById("blog-section");
+const blogButton = document.getElementById("blog-button");
 
 window.onload = function(event) {
   if (window.matchMedia("only screen and (max-width: 993px)").matches) {
@@ -64,7 +66,7 @@ for (i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     let getBts = document.getElementsByClassName("active-bt");
     if (getBts.length > 0) {
-      getBts[0].className = getBts[0].className.replace(" active-bt", "");
+      getBts[0].className = getBts[0].className.replace("active-bt", "");
     }
     this.className += " active-bt";
   });
@@ -74,11 +76,22 @@ const coSection = () => {
   principalSection.classList.add("hide");
   cristinaSection.classList.add("hide");
   coursesSection.classList.remove("hide");
+  blogSection.classList.add("hide");
 };
 
 coursesButton.addEventListener("click", coSection);
 
+const bloSection = () => {
+  principalSection.classList.add("hide");
+  cristinaSection.classList.add("hide");
+  coursesSection.classList.add("hide");
+  blogSection.classList.remove("hide");
+};
+
+blogButton.addEventListener("click", bloSection);
+
 const confSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
@@ -96,6 +109,7 @@ const confSect = () => {
 confButton.addEventListener("click", confSect);
 
 const bioSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
@@ -113,6 +127,7 @@ const bioSect = () => {
 bioButton.addEventListener("click", bioSect);
 
 const tallSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
@@ -131,6 +146,7 @@ const tallSect = () => {
 tallButton.addEventListener("click", tallSect);
 
 const terSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
@@ -151,6 +167,7 @@ const terSect = () => {
 terButton.addEventListener("click", terSect);
 
 const tvSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
@@ -169,6 +186,7 @@ const tvSect = () => {
 tvButton.addEventListener("click", tvSect);
 
 const confsSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
@@ -186,6 +204,7 @@ const confsSect = () => {
 confsButton.addEventListener("click", confsSect);
 
 const biosSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
@@ -203,6 +222,7 @@ const biosSect = () => {
 biosButton.addEventListener("click", biosSect);
 
 const tallsSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
@@ -221,6 +241,7 @@ const tallsSect = () => {
 tallsButton.addEventListener("click", tallsSect);
 
 const tersSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
@@ -241,6 +262,7 @@ const tersSect = () => {
 tersButton.addEventListener("click", tersSect);
 
 const tvsSect = () => {
+  blogSection.classList.add("hide");
   cristinaSection.classList.remove("hide");
   principalSection.classList.add("hide");
   coursesSection.classList.add("hide");
