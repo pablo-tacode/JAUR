@@ -1,8 +1,8 @@
 const bioMenu = document.getElementById("bio-menu");
 const liDrop = document.getElementById("li-drop");
 const crisExp = document.getElementById("cris-exp");
-const navContainer = document.getElementById("nav-links-container");
-const btns = navContainer.getElementsByClassName("bt");
+//const navContainer = document.getElementById("nav-links-container");
+//const btns = navContainer.getElementsByClassName("bt");
 const bioButton = document.getElementById("bio-button");
 const confButton = document.getElementById("conf-button");
 const tallButton = document.getElementById("tall-button");
@@ -25,6 +25,19 @@ const coursesButton = document.getElementById("courses-button");
 const principalButton = document.getElementById("principal-button");
 const blogSection = document.getElementById("blog-section");
 const blogButton = document.getElementById("blog-button");
+const principalBlog = document.getElementById("principal-blog");
+const bullyingArt = document.getElementById("bullying-art");
+const bullyingButton = document.getElementById("bullying-button");
+const relationArt = document.getElementById("relation-art");
+const relationButton = document.getElementById("relation-button");
+const familyArt = document.getElementById("family-art");
+const familyButton = document.getElementById("family-button");
+const workArt = document.getElementById("work-art");
+const workButton = document.getElementById("work-button");
+const happyArt = document.getElementById("happy-art");
+const happyButton = document.getElementById("happy-button");
+const developeArt = document.getElementById("develope-art");
+const developeButton = document.getElementById("develope-button");
 
 window.onload = function(event) {
   if (window.matchMedia("only screen and (max-width: 993px)").matches) {
@@ -62,7 +75,7 @@ $(document).ready(function() {
   });
 });
 
-for (i = 0; i < btns.length; i++) {
+/*for (i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     let getBts = document.getElementsByClassName("active-bt");
     if (getBts.length > 0) {
@@ -70,13 +83,15 @@ for (i = 0; i < btns.length; i++) {
     }
     this.className += " active-bt";
   });
-}
+}*/
 
 const coSection = () => {
   principalSection.classList.add("hide");
   cristinaSection.classList.add("hide");
   coursesSection.classList.remove("hide");
   blogSection.classList.add("hide");
+  coursesButton.classList.add("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 
 coursesButton.addEventListener("click", coSection);
@@ -86,6 +101,8 @@ const bloSection = () => {
   cristinaSection.classList.add("hide");
   coursesSection.classList.add("hide");
   blogSection.classList.remove("hide");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.add("active-menu");
 };
 
 blogButton.addEventListener("click", bloSection);
@@ -105,6 +122,8 @@ const confSect = () => {
   tallsButton.classList.remove("bts-sub");
   tersButton.classList.remove("bts-sub");
   tvsButton.classList.remove("bts-sub");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 confButton.addEventListener("click", confSect);
 
@@ -123,6 +142,8 @@ const bioSect = () => {
   tallsButton.classList.remove("bts-sub");
   tersButton.classList.remove("bts-sub");
   tvsButton.classList.remove("bts-sub");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 bioButton.addEventListener("click", bioSect);
 
@@ -141,6 +162,8 @@ const tallSect = () => {
   tallsButton.classList.add("bts-sub");
   tersButton.classList.remove("bts-sub");
   tvsButton.classList.remove("bts-sub");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 
 tallButton.addEventListener("click", tallSect);
@@ -162,6 +185,8 @@ const terSect = () => {
   tallsButton.classList.remove("bts-sub");
   tersButton.classList.add("bts-sub");
   tvsButton.classList.remove("bts-sub");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 
 terButton.addEventListener("click", terSect);
@@ -181,6 +206,8 @@ const tvSect = () => {
   tallsButton.classList.remove("bts-sub");
   tersButton.classList.remove("bts-sub");
   tvsButton.classList.add("bts-sub");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 
 tvButton.addEventListener("click", tvSect);
@@ -200,6 +227,8 @@ const confsSect = () => {
   tallContainer.classList.add("hide");
   terContainer.classList.add("hide");
   tvContainer.classList.add("hide");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 confsButton.addEventListener("click", confsSect);
 
@@ -218,6 +247,8 @@ const biosSect = () => {
   tallContainer.classList.add("hide");
   terContainer.classList.add("hide");
   tvContainer.classList.add("hide");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 biosButton.addEventListener("click", biosSect);
 
@@ -236,6 +267,8 @@ const tallsSect = () => {
   tallContainer.classList.remove("hide");
   terContainer.classList.add("hide");
   tvContainer.classList.add("hide");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 
 tallsButton.addEventListener("click", tallsSect);
@@ -257,6 +290,8 @@ const tersSect = () => {
   tallContainer.classList.add("hide");
   terContainer.classList.remove("hide");
   tvContainer.classList.add("hide");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 
 tersButton.addEventListener("click", tersSect);
@@ -276,9 +311,119 @@ const tvsSect = () => {
   tallContainer.classList.add("hide");
   terContainer.classList.add("hide");
   tvContainer.classList.remove("hide");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
 };
 
 tvsButton.addEventListener("click", tvsSect);
+
+const bullyingBlog = () => {
+  principalBlog.classList.add("hide");
+  bullyingArt.classList.remove("hide");
+  relationArt.classList.add("hide");
+  familyArt.classList.add("hide");
+  workArt.classList.add("hide");
+  happyArt.classList.add("hide");
+  developeArt.classList.add("hide");
+  bullyingButton.classList.add("a-blog-button");
+  relationButton.classList.remove("a-blog-button");
+  familyButton.classList.remove("a-blog-button");
+  workButton.classList.remove("a-blog-button");
+  happyButton.classList.remove("a-blog-button");
+  developeButton.classList.remove("a-blog-button");
+};
+
+bullyingButton.addEventListener("click", bullyingBlog);
+
+const relationBlog = () => {
+  principalBlog.classList.add("hide");
+  bullyingArt.classList.add("hide");
+  relationArt.classList.remove("hide");
+  familyArt.classList.add("hide");
+  workArt.classList.add("hide");
+  happyArt.classList.add("hide");
+  developeArt.classList.add("hide");
+  bullyingButton.classList.remove("a-blog-button");
+  relationButton.classList.add("a-blog-button");
+  familyButton.classList.remove("a-blog-button");
+  workButton.classList.remove("a-blog-button");
+  happyButton.classList.remove("a-blog-button");
+  developeButton.classList.remove("a-blog-button");
+};
+
+relationButton.addEventListener("click", relationBlog);
+
+const familyBlog = () => {
+  principalBlog.classList.add("hide");
+  bullyingArt.classList.add("hide");
+  relationArt.classList.add("hide");
+  familyArt.classList.remove("hide");
+  workArt.classList.add("hide");
+  happyArt.classList.add("hide");
+  developeArt.classList.add("hide");
+  bullyingButton.classList.remove("a-blog-button");
+  relationButton.classList.remove("a-blog-button");
+  familyButton.classList.add("a-blog-button");
+  workButton.classList.remove("a-blog-button");
+  happyButton.classList.remove("a-blog-button");
+  developeButton.classList.remove("a-blog-button");
+};
+
+familyButton.addEventListener("click", familyBlog);
+
+const workBlog = () => {
+  principalBlog.classList.add("hide");
+  bullyingArt.classList.add("hide");
+  relationArt.classList.add("hide");
+  familyArt.classList.add("hide");
+  workArt.classList.remove("hide");
+  happyArt.classList.add("hide");
+  developeArt.classList.add("hide");
+  bullyingButton.classList.remove("a-blog-button");
+  relationButton.classList.remove("a-blog-button");
+  familyButton.classList.remove("a-blog-button");
+  workButton.classList.add("a-blog-button");
+  happyButton.classList.remove("a-blog-button");
+  developeButton.classList.remove("a-blog-button");
+};
+
+workButton.addEventListener("click", workBlog);
+
+const happyBlog = () => {
+  principalBlog.classList.add("hide");
+  bullyingArt.classList.add("hide");
+  relationArt.classList.add("hide");
+  familyArt.classList.add("hide");
+  workArt.classList.add("hide");
+  happyArt.classList.remove("hide");
+  developeArt.classList.add("hide");
+  bullyingButton.classList.remove("a-blog-button");
+  relationButton.classList.remove("a-blog-button");
+  familyButton.classList.remove("a-blog-button");
+  workButton.classList.remove("a-blog-button");
+  happyButton.classList.add("a-blog-button");
+  developeButton.classList.remove("a-blog-button");
+};
+
+happyButton.addEventListener("click", happyBlog);
+
+const developeBlog = () => {
+  principalBlog.classList.add("hide");
+  bullyingArt.classList.add("hide");
+  relationArt.classList.add("hide");
+  familyArt.classList.add("hide");
+  workArt.classList.add("hide");
+  happyArt.classList.add("hide");
+  developeArt.classList.remove("hide");
+  bullyingButton.classList.remove("a-blog-button");
+  relationButton.classList.remove("a-blog-button");
+  familyButton.classList.remove("a-blog-button");
+  workButton.classList.remove("a-blog-button");
+  happyButton.classList.remove("a-blog-button");
+  developeButton.classList.add("a-blog-button");
+};
+
+developeButton.addEventListener("click", developeBlog);
 
 /*jQuery("html").bind("click", function(e) {
   if (jQuery(e.target).closest(".navbar").length == 0) {
