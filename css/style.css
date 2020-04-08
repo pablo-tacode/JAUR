@@ -319,7 +319,7 @@ a.bts-sub:hover {
 
 /*Blog*/
 .dropdown-toggle-blog {
-  background: #ce684f;
+  background: #ce684f !important;
   width: 8.5rem;
   line-height: 1.5rem;
   color: white !important; }
