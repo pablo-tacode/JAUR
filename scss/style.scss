@@ -156,6 +156,10 @@ h2 {
   bottom: -50px;
 }
 
+.carousel-blog {
+  margin-right: 21%;
+}
+
 .carousel-exp {
   background: #f29754;
   box-shadow: 0px 4px 4px #dfd2c7;
@@ -551,8 +555,12 @@ h4 {
 
 .title-body-card {
   font-size: 0.625rem;
-  line-height: 20px;
+  line-height: 12px;
   font-weight: bold;
+}
+
+.card-title-container {
+  height: 80px;
 }
 
 .contain-body-card {
@@ -687,6 +695,7 @@ a.dropdown-item-blog:hover {
   .carousel-exp {
     height: 520px;
   }
+
   .carousel-indicators li {
     width: 24px;
     height: 24px;
