@@ -63,29 +63,42 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 2.5rem;
-  // padding-top: 3.3rem;
-  padding-top: 4.3rem;
+  padding-top: 3.3rem;
+  //padding-top: 4.3rem;
 }
-//.title-ad {
-// font-size: 0.65rem;
-// color: #9a3820;
-// font-weight: bold;
-//}
+.title-ad {
+  font-size: 0.75rem;
+  color: #9a3820;
+  font-weight: bold;
+}
 
-//.subtitle-ad {
-//  font-size: 1rem;
-// color: white;
-//}
+.subtitle-ad {
+  font-size: 1.125rem;
+  color: white;
+}
 
-//.button-ad-container {
-//  font-size: 0.5rem;
-//}
+.button-ad-container {
+  font-size: 0.594rem;
+}
+a.button-ad {
+  text-decoration: none;
+}
 
-//.button-ad {
-// background: #e7600d;
-// box-shadow: 0px 4px 4px #9a3820;
-// padding: 0.1rem;
-//}
+a.button-ad:hover {
+  text-decoration: none;
+  background: #e7600d !important;
+  border: none !important;
+}
+
+.button-ad {
+  background: #e7600d;
+  box-shadow: 0px 4px 4px #9a3820;
+  padding: 0.1rem;
+}
+
+.black-text {
+  font-weight: bold;
+}
 
 .introduction {
   font-size: 0.875rem;
@@ -99,10 +112,13 @@ body {
   border-radius: 15px;
   color: rgba(255, 255, 255, 0.87);
   padding-left: 2rem;
+  list-style-image: url("../assets/Images/prize 1.svg");
 }
 
 .prizes-items {
-  line-height: 33px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* line-height: 33px; */
   letter-spacing: 0.16px;
   font-size: 0.875rem;
 }
@@ -153,7 +169,7 @@ h2 {
   font-size: 0.75rem;
 }
 .carousel-content {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 
 .carousel-div {
@@ -261,6 +277,46 @@ h2 {
   margin: 0;
 }
 
+.twitter-bio {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.facebook-bio {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.youtube-bio {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.instagram-bio {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+a.cris-links {
+  color: black;
+}
+
+.cris-links-container {
+  font-size: 0.875rem;
+}
+
+.span-bio {
+  color: #f29754;
+}
+
 /*Conf*/
 
 .cristina-dot {
@@ -279,6 +335,21 @@ h2 {
   text-decoration: none !important;
 }
 
+ul.li-conf {
+  padding-left: 1.5rem;
+  list-style-image: url("../assets/Images/dotConf.svg");
+}
+
+.bio-sub {
+  color: #e7600d;
+  text-align: left;
+  padding-left: 0.7rem !important;
+}
+
+ul.li-tall {
+  padding-left: 1rem;
+  list-style-image: url(../assets/Images/dotConf.svg);
+}
 //Para una sola page
 //.a-cris-submenu:hover ~ .bts-sub {
 // color: white;
@@ -555,11 +626,19 @@ a.dropdown-item-blog:hover {
     /*margin-right: 1.2rem;*/
   }
 
+  .hide-ad {
+    display: none !important;
+  }
+
   /*bio/cristina*/
 
   .bio-img-container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .hide-icons {
+    display: none !important;
   }
 
   .cris-title {
@@ -580,6 +659,31 @@ a.dropdown-item-blog:hover {
 }
 
 @media only screen and (min-width: 993px) {
+  .ad-lg-container {
+    width: 100%;
+  }
+
+  .title-ad {
+    font-size: 1.125rem;
+  }
+
+  .p-ad {
+    font-size: 1.031rem;
+  }
+
+  .in-ad-2 {
+    color: white;
+  }
+
+  .subtitle-ad {
+    font-size: 1.25rem;
+  }
+
+  .button-ad-container {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
   .carousel-exp {
     height: 520px;
   }
@@ -595,7 +699,9 @@ a.dropdown-item-blog:hover {
     height: 576px;
   }
   .prizes-items {
-    line-height: 45px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* line-height: 45px; */
     letter-spacing: 0.16px;
     font-size: 1.125em;
   }
@@ -690,9 +796,17 @@ a.dropdown-item-blog:hover {
   }
 
   .bio-p-container {
-    padding-right: 0;
-    padding-left: 1rem;
+    padding-right: 0rem;
+    padding-left: 4rem;
     font-size: 0.875rem;
+  }
+
+  .bio-img-container {
+    padding-left: 4rem;
+  }
+
+  .hide-icons-lg {
+    display: none !important;
   }
 
   .cris-row-cotainer {
