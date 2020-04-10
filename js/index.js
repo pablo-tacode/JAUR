@@ -39,7 +39,7 @@ const happyButton = document.getElementById("happy-button");
 const developeArt = document.getElementById("develope-art");
 const developeButton = document.getElementById("develope-button");
 
-window.onload = function(event) {
+window.onload = function (event) {
   if (window.matchMedia("only screen and (max-width: 993px)").matches) {
     bioMenu.classList.remove("dropdown-menu");
     liDrop.classList.remove("dropdown");
@@ -52,7 +52,7 @@ window.onload = function(event) {
   }
 };
 
-window.onresize = function(event) {
+window.onresize = function (event) {
   if (window.matchMedia("only screen and (max-width: 993px)").matches) {
     bioMenu.classList.remove("dropdown-menu");
     liDrop.classList.remove("dropdown");
@@ -65,8 +65,8 @@ window.onresize = function(event) {
   }
 };
 
-$(document).ready(function() {
-  $(document).click(function(event) {
+$(document).ready(function () {
+  $(document).click(function (event) {
     var target = $(event.target);
     var _mobileMenuOpen = $(".navbar-collapse").hasClass("show");
     if (_mobileMenuOpen === true && !target.hasClass("navbar-toggler")) {
@@ -92,6 +92,8 @@ const coSection = () => {
   blogSection.classList.add("hide");
   coursesButton.classList.add("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.remove("drop-container-one");
+  crisExp.classList.add("drop-container-off");
 };
 
 coursesButton.addEventListener("click", coSection);
@@ -103,6 +105,8 @@ const bloSection = () => {
   blogSection.classList.remove("hide");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.add("active-menu");
+  crisExp.classList.remove("drop-container-one");
+  crisExp.classList.add("drop-container-off");
 };
 
 blogButton.addEventListener("click", bloSection);
@@ -124,6 +128,8 @@ const confSect = () => {
   tvsButton.classList.remove("bts-sub");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 confButton.addEventListener("click", confSect);
 
@@ -144,6 +150,8 @@ const bioSect = () => {
   tvsButton.classList.remove("bts-sub");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 bioButton.addEventListener("click", bioSect);
 
@@ -164,6 +172,8 @@ const tallSect = () => {
   tvsButton.classList.remove("bts-sub");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 
 tallButton.addEventListener("click", tallSect);
@@ -187,6 +197,8 @@ const terSect = () => {
   tvsButton.classList.remove("bts-sub");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 
 terButton.addEventListener("click", terSect);
@@ -208,6 +220,8 @@ const tvSect = () => {
   tvsButton.classList.add("bts-sub");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 
 tvButton.addEventListener("click", tvSect);
@@ -229,6 +243,8 @@ const confsSect = () => {
   tvContainer.classList.add("hide");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 confsButton.addEventListener("click", confsSect);
 
@@ -249,6 +265,8 @@ const biosSect = () => {
   tvContainer.classList.add("hide");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 biosButton.addEventListener("click", biosSect);
 
@@ -269,6 +287,8 @@ const tallsSect = () => {
   tvContainer.classList.add("hide");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 
 tallsButton.addEventListener("click", tallsSect);
@@ -292,6 +312,8 @@ const tersSect = () => {
   tvContainer.classList.add("hide");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 
 tersButton.addEventListener("click", tersSect);
@@ -313,6 +335,8 @@ const tvsSect = () => {
   tvContainer.classList.remove("hide");
   coursesButton.classList.remove("active-menu");
   blogButton.classList.remove("active-menu");
+  crisExp.classList.add("drop-container-one");
+  crisExp.classList.remove("drop-container-off");
 };
 
 tvsButton.addEventListener("click", tvsSect);
