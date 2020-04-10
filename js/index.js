@@ -46,8 +46,8 @@ const workTitle = document.getElementById("work-title");
 const familyTitle = document.getElementById("family-title");
 const happyTitle = document.getElementById("happy-title");
 const developeTitle = document.getElementById("develope-title");
-//const courseVideo = document.getElementById("course-video");
-//const principalVideo = document.getElementById("principal-video");
+const courseVideo = document.getElementById("course-video");
+const principalVideo = document.getElementById("principal-video");
 
 window.onload = function (event) {
   if (window.matchMedia("only screen and (max-width: 993px)").matches) {
@@ -104,7 +104,7 @@ const prinSection = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.remove("drop-container-one");
   crisExp.classList.add("drop-container-off");
-  //courseVideo.pause();
+  courseVideo.pause();
   //principalVideo.play();
 };
 principalButton.addEventListener("click", prinSection);
@@ -119,7 +119,7 @@ const coSection = () => {
   crisExp.classList.remove("drop-container-one");
   crisExp.classList.add("drop-container-off");
   //courseVideo.play();
-  //principalVideo.pause();
+  principalVideo.pause();
 };
 
 coursesButton.addEventListener("click", coSection);
@@ -133,8 +133,8 @@ const bloSection = () => {
   blogButton.classList.add("active-menu");
   crisExp.classList.remove("drop-container-one");
   crisExp.classList.add("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 
 blogButton.addEventListener("click", bloSection);
@@ -158,8 +158,8 @@ const confSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 confButton.addEventListener("click", confSect);
 
@@ -182,8 +182,8 @@ const bioSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 bioButton.addEventListener("click", bioSect);
 
@@ -206,8 +206,8 @@ const tallSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 
 tallButton.addEventListener("click", tallSect);
@@ -233,8 +233,8 @@ const terSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 
 terButton.addEventListener("click", terSect);
@@ -258,8 +258,8 @@ const tvSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 
 tvButton.addEventListener("click", tvSect);
@@ -283,8 +283,8 @@ const confsSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 confsButton.addEventListener("click", confsSect);
 
@@ -307,8 +307,8 @@ const biosSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 biosButton.addEventListener("click", biosSect);
 
@@ -331,8 +331,8 @@ const tallsSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 
 tallsButton.addEventListener("click", tallsSect);
@@ -358,8 +358,8 @@ const tersSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 
 tersButton.addEventListener("click", tersSect);
@@ -383,8 +383,8 @@ const tvsSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
-  //courseVideo.pause();
-  //principalVideo.pause();
+  courseVideo.pause();
+  principalVideo.pause();
 };
 
 tvsButton.addEventListener("click", tvsSect);
