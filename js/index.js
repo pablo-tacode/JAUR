@@ -38,6 +38,14 @@ const happyArt = document.getElementById("happy-art");
 const happyButton = document.getElementById("happy-button");
 const developeArt = document.getElementById("develope-art");
 const developeButton = document.getElementById("develope-button");
+const principalBlogButton = document.getElementById("principal-blog-button");
+const blogTitle = document.getElementById("blog-title");
+const bullyingTitle = document.getElementById("bullying-title");
+const relationTitle = document.getElementById("relation-title");
+const workTitle = document.getElementById("work-title");
+const familyTitle = document.getElementById("family-title");
+const happyTitle = document.getElementById("happy-title");
+const developeTitle = document.getElementById("develope-title");
 
 window.onload = function (event) {
   if (window.matchMedia("only screen and (max-width: 993px)").matches) {
@@ -341,6 +349,32 @@ const tvsSect = () => {
 
 tvsButton.addEventListener("click", tvsSect);
 
+const primeBlog = () => {
+  principalBlog.classList.remove("hide");
+  bullyingArt.classList.add("hide");
+  relationArt.classList.add("hide");
+  familyArt.classList.add("hide");
+  workArt.classList.add("hide");
+  happyArt.classList.add("hide");
+  developeArt.classList.add("hide");
+  principalBlogButton.classList.add("a-blog-button");
+  bullyingButton.classList.remove("a-blog-button");
+  relationButton.classList.remove("a-blog-button");
+  familyButton.classList.remove("a-blog-button");
+  workButton.classList.remove("a-blog-button");
+  happyButton.classList.remove("a-blog-button");
+  developeButton.classList.remove("a-blog-button");
+  blogTitle.classList.remove("hide");
+  bullyingTitle.classList.add("hide");
+  relationTitle.classList.add("hide");
+  workTitle.classList.add("hide");
+  familyTitle.classList.add("hide");
+  happyTitle.classList.add("hide");
+  developeTitle.classList.add("hide");
+};
+
+principalBlogButton.addEventListener("click", primeBlog);
+
 const bullyingBlog = () => {
   principalBlog.classList.add("hide");
   bullyingArt.classList.remove("hide");
@@ -349,12 +383,20 @@ const bullyingBlog = () => {
   workArt.classList.add("hide");
   happyArt.classList.add("hide");
   developeArt.classList.add("hide");
+  principalBlogButton.classList.remove("a-blog-button");
   bullyingButton.classList.add("a-blog-button");
   relationButton.classList.remove("a-blog-button");
   familyButton.classList.remove("a-blog-button");
   workButton.classList.remove("a-blog-button");
   happyButton.classList.remove("a-blog-button");
   developeButton.classList.remove("a-blog-button");
+  blogTitle.classList.add("hide");
+  bullyingTitle.classList.remove("hide");
+  relationTitle.classList.add("hide");
+  workTitle.classList.add("hide");
+  familyTitle.classList.add("hide");
+  happyTitle.classList.add("hide");
+  developeTitle.classList.add("hide");
 };
 
 bullyingButton.addEventListener("click", bullyingBlog);
@@ -367,12 +409,20 @@ const relationBlog = () => {
   workArt.classList.add("hide");
   happyArt.classList.add("hide");
   developeArt.classList.add("hide");
+  principalBlogButton.classList.remove("a-blog-button");
   bullyingButton.classList.remove("a-blog-button");
   relationButton.classList.add("a-blog-button");
   familyButton.classList.remove("a-blog-button");
   workButton.classList.remove("a-blog-button");
   happyButton.classList.remove("a-blog-button");
   developeButton.classList.remove("a-blog-button");
+  blogTitle.classList.add("hide");
+  bullyingTitle.classList.add("hide");
+  relationTitle.classList.remove("hide");
+  workTitle.classList.add("hide");
+  familyTitle.classList.add("hide");
+  happyTitle.classList.add("hide");
+  developeTitle.classList.add("hide");
 };
 
 relationButton.addEventListener("click", relationBlog);
@@ -385,12 +435,20 @@ const familyBlog = () => {
   workArt.classList.add("hide");
   happyArt.classList.add("hide");
   developeArt.classList.add("hide");
+  principalBlogButton.classList.remove("a-blog-button");
   bullyingButton.classList.remove("a-blog-button");
   relationButton.classList.remove("a-blog-button");
   familyButton.classList.add("a-blog-button");
   workButton.classList.remove("a-blog-button");
   happyButton.classList.remove("a-blog-button");
   developeButton.classList.remove("a-blog-button");
+  blogTitle.classList.add("hide");
+  bullyingTitle.classList.add("hide");
+  relationTitle.classList.add("hide");
+  workTitle.classList.add("hide");
+  familyTitle.classList.remove("hide");
+  happyTitle.classList.add("hide");
+  developeTitle.classList.add("hide");
 };
 
 familyButton.addEventListener("click", familyBlog);
@@ -403,12 +461,20 @@ const workBlog = () => {
   workArt.classList.remove("hide");
   happyArt.classList.add("hide");
   developeArt.classList.add("hide");
+  principalBlogButton.classList.remove("a-blog-button");
   bullyingButton.classList.remove("a-blog-button");
   relationButton.classList.remove("a-blog-button");
   familyButton.classList.remove("a-blog-button");
   workButton.classList.add("a-blog-button");
   happyButton.classList.remove("a-blog-button");
   developeButton.classList.remove("a-blog-button");
+  blogTitle.classList.add("hide");
+  bullyingTitle.classList.add("hide");
+  relationTitle.classList.add("hide");
+  workTitle.classList.remove("hide");
+  familyTitle.classList.add("hide");
+  happyTitle.classList.add("hide");
+  developeTitle.classList.add("hide");
 };
 
 workButton.addEventListener("click", workBlog);
@@ -421,12 +487,20 @@ const happyBlog = () => {
   workArt.classList.add("hide");
   happyArt.classList.remove("hide");
   developeArt.classList.add("hide");
+  principalBlogButton.classList.remove("a-blog-button");
   bullyingButton.classList.remove("a-blog-button");
   relationButton.classList.remove("a-blog-button");
   familyButton.classList.remove("a-blog-button");
   workButton.classList.remove("a-blog-button");
   happyButton.classList.add("a-blog-button");
   developeButton.classList.remove("a-blog-button");
+  blogTitle.classList.add("hide");
+  bullyingTitle.classList.add("hide");
+  relationTitle.classList.add("hide");
+  workTitle.classList.add("hide");
+  familyTitle.classList.add("hide");
+  happyTitle.classList.remove("hide");
+  developeTitle.classList.add("hide");
 };
 
 happyButton.addEventListener("click", happyBlog);
@@ -439,12 +513,20 @@ const developeBlog = () => {
   workArt.classList.add("hide");
   happyArt.classList.add("hide");
   developeArt.classList.remove("hide");
+  principalBlogButton.classList.remove("a-blog-button");
   bullyingButton.classList.remove("a-blog-button");
   relationButton.classList.remove("a-blog-button");
   familyButton.classList.remove("a-blog-button");
   workButton.classList.remove("a-blog-button");
   happyButton.classList.remove("a-blog-button");
   developeButton.classList.add("a-blog-button");
+  blogTitle.classList.add("hide");
+  bullyingTitle.classList.add("hide");
+  relationTitle.classList.add("hide");
+  workTitle.classList.add("hide");
+  familyTitle.classList.add("hide");
+  happyTitle.classList.add("hide");
+  developeTitle.classList.remove("hide");
 };
 
 developeButton.addEventListener("click", developeBlog);
