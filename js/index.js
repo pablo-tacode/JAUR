@@ -571,6 +571,18 @@ const developeBlog = () => {
 
 developeButton.addEventListener("click", developeBlog);
 
+principalVideo.addEventListener("ended", function () {
+  this.currentTime = 0;
+  principalVideo.load();
+  // principalVideo.setAttribute("poster", "./assets/Images/poster2.jpg");
+});
+
+courseVideo.addEventListener("ended", function () {
+  this.currentTime = 0;
+  courseVideo.load();
+  // principalVideo.setAttribute("poster", "./assets/Images/poster2.jpg");
+});
+
 /*const videoPlaying = () => {
   courseVideo.play();
   //principalVideo.pause();
