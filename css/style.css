@@ -792,6 +792,9 @@ a.dropdown-item-blog:hover {
     font-size: 1.45rem;
     line-height: 24px;
     letter-spacing: 0.24px; } }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .bio-p-container {
+    font-size: 0.84rem; } }
 @media only screen and (min-width: 1091px) {
   .title-ad {
     font-size: 1.125rem; }

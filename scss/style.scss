@@ -1014,6 +1014,11 @@ a.dropdown-item-blog:hover {
     letter-spacing: 0.24px;
   }
 }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .bio-p-container {
+    font-size: 0.84rem;
+  }
+}
 
 @media only screen and (min-width: 1091px) {
   .title-ad {
