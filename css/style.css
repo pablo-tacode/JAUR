@@ -801,7 +801,7 @@ a.dropdown-item-blog:hover {
     color: white; } }
 @media only screen and (max-width: 348px) {
   .card-blog-top {
-    font-size: 0.6rem; }
+    font-size: 0.61rem; }
 
   .title-body-card {
     font-size: 0.55rem; } }
