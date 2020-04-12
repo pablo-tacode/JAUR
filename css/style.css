@@ -242,7 +242,8 @@ h2 {
   font-size: 0.875rem; }
 
 .cris-title {
-  margin: 0; }
+  margin: 0;
+  padding-left: 4rem; }
 
 .twitter-bio {
   padding-left: 1rem;
