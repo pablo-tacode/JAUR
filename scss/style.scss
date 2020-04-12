@@ -1020,6 +1020,21 @@ a.dropdown-item-blog:hover {
   }
 }
 
+@media only screen and (max-width: 338px) {
+  .footer-text {
+    font-size: 0.65rem;
+    color: white;
+  }
+}
+@media only screen and (max-width: 348px) {
+  .card-blog-top {
+    font-size: 0.6rem;
+  }
+  .title-body-card {
+    font-size: 0.55rem;
+  }
+}
+
 @media only screen and (min-width: 1091px) {
   .title-ad {
     font-size: 1.125rem;
