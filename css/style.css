@@ -51,22 +51,32 @@ body {
 .ad {
   background-color: #f29754;
   color: #993921;
-  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 2.5rem;
-  padding-top: 3.3rem; }
+  padding-top: 3.3rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.ad-container {
+  width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-top: 0rem !important;
+  line-height: normal; }
 
 .title-ad {
-  font-size: 0.75rem;
   color: #9a3820;
   font-weight: bold; }
 
 .subtitle-ad {
-  font-size: 1.125rem;
   color: white; }
 
-.button-ad-container {
-  font-size: 0.594rem; }
+.img-right-container {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: right; }
 
 a.button-ad {
   text-decoration: none; }
@@ -544,23 +554,25 @@ a.dropdown-item-blog:hover {
     padding-left: 0.5rem; } }
 @media only screen and (min-width: 993px) {
   .ad-lg-container {
-    width: 100%; }
+    width: 100%;
+    /* height: 10vh; */
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    line-height: normal; }
 
-  .title-ad {
-    font-size: 1.125rem; }
+  .img-left-container {
+    padding-left: 0;
+    text-align: left;
+    padding-right: 0; }
 
-  .p-ad {
-    font-size: 1.031rem; }
+  .img-right-container {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: right; }
 
   .in-ad-2 {
     color: white; }
-
-  .subtitle-ad {
-    font-size: 1.25rem; }
-
-  .button-ad-container {
-    font-size: 1rem;
-    line-height: 20px; }
 
   .carousel-exp {
     height: 520px; }
@@ -604,9 +616,6 @@ a.dropdown-item-blog:hover {
 
   .ad {
     font-size: 2.5rem; }
-
-  .ad-container {
-    padding-right: 40%; }
 
   .first-ad {
     text-align: right !important; }
@@ -674,6 +683,9 @@ a.dropdown-item-blog:hover {
     padding-bottom: 5rem !important;
     margin-bottom: 5rem !important; }
 
+  .container-video-course {
+    margin-top: 4.5rem; }
+
   .btn-course {
     font-size: 1.5rem;
     line-height: 43px; }
@@ -687,5 +699,110 @@ a.dropdown-item-blog:hover {
 
   .card-col {
     margin: 0.05rem; } }
+@media only screen and (max-width: 374px) {
+  .title-ad {
+    font-size: 0.55rem;
+    margin-top: 0.4rem; }
+
+  .subtitle-ad {
+    font-size: 0.7rem; }
+
+  .button-ad-container {
+    margin-top: 0.2rem;
+    font-size: 0.45rem;
+    margin-bottom: 0.3rem; } }
+@media only screen and (max-width: 410px) and (min-width: 375px) {
+  .title-ad {
+    font-size: 0.65rem;
+    margin-top: 0.4rem; }
+
+  .subtitle-ad {
+    font-size: 0.8rem; }
+
+  .button-ad-container {
+    margin-top: 0.2rem;
+    font-size: 0.55rem;
+    margin-bottom: 0.3rem; } }
+@media only screen and (min-width: 411px) and (max-width: 500px) {
+  .title-ad {
+    font-size: 0.7rem; }
+
+  .subtitle-ad {
+    font-size: 1rem; }
+
+  .button-ad-container {
+    margin-top: 0.2rem;
+    font-size: 0.5rem; } }
+@media only screen and (min-width: 510px) and (max-width: 559px) {
+  .title-ad {
+    font-size: 0.75rem; }
+
+  .subtitle-ad {
+    font-size: 1.125rem; }
+
+  .button-ad-container {
+    margin-top: 0.2rem;
+    font-size: 0.594rem; } }
+@media only screen and (min-width: 560px) and (max-width: 992px) {
+  .title-ad {
+    font-size: 1.1rem; }
+
+  .subtitle-ad {
+    font-size: 1.4rem; }
+
+  .button-ad-container {
+    margin-top: 0.2rem;
+    font-size: 0.9rem; } }
+@media only screen and (min-width: 993px) and (max-width: 1090px) {
+  .title-ad {
+    font-size: 1.05rem; }
+
+  .p-ad {
+    font-size: 0.9rem; }
+
+  .subtitle-ad {
+    font-size: 1.2rem; }
+
+  .button-ad-container {
+    margin-top: 0.2rem;
+    font-size: 0.8rem; }
+
+  .introduction {
+    font-size: 1.2rem;
+    line-height: 24px;
+    letter-spacing: 0.24px; } }
+@media only screen and (min-width: 993px) and (max-width: 1030px) {
+  .introduction {
+    font-size: 1.2rem;
+    line-height: 24px;
+    letter-spacing: 0.24px; } }
+@media only screen and (min-width: 1031px) and (max-width: 1070px) {
+  .introduction {
+    font-size: 1.3rem;
+    line-height: 24px;
+    letter-spacing: 0.24px; } }
+@media only screen and (min-width: 1071px) and (max-width: 1140px) {
+  .introduction {
+    font-size: 1.35rem;
+    line-height: 24px;
+    letter-spacing: 0.24px; } }
+@media only screen and (min-width: 1141px) and (max-width: 1200px) {
+  .introduction {
+    font-size: 1.45rem;
+    line-height: 24px;
+    letter-spacing: 0.24px; } }
+@media only screen and (min-width: 1091px) {
+  .title-ad {
+    font-size: 1.125rem; }
+
+  .p-ad {
+    font-size: 1.031rem; }
+
+  .subtitle-ad {
+    font-size: 1.25rem; }
+
+  .button-ad-container {
+    font-size: 1rem;
+    line-height: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

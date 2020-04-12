@@ -46,6 +46,8 @@ const workTitle = document.getElementById("work-title");
 const familyTitle = document.getElementById("family-title");
 const happyTitle = document.getElementById("happy-title");
 const developeTitle = document.getElementById("develope-title");
+const courseVideo = document.getElementById("course-video");
+const principalVideo = document.getElementById("principal-video");
 
 window.onload = function (event) {
   if (window.matchMedia("only screen and (max-width: 993px)").matches) {
@@ -93,6 +95,20 @@ $(document).ready(function () {
   });
 }*/
 
+const prinSection = () => {
+  principalSection.classList.remove("hide");
+  cristinaSection.classList.add("hide");
+  coursesSection.classList.add("hide");
+  blogSection.classList.add("hide");
+  coursesButton.classList.remove("active-menu");
+  blogButton.classList.remove("active-menu");
+  crisExp.classList.remove("drop-container-one");
+  crisExp.classList.add("drop-container-off");
+  courseVideo.load();
+  //principalVideo.play();
+};
+principalButton.addEventListener("click", prinSection);
+
 const coSection = () => {
   principalSection.classList.add("hide");
   cristinaSection.classList.add("hide");
@@ -102,6 +118,8 @@ const coSection = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.remove("drop-container-one");
   crisExp.classList.add("drop-container-off");
+  //courseVideo.play();
+  principalVideo.load();
 };
 
 coursesButton.addEventListener("click", coSection);
@@ -115,6 +133,8 @@ const bloSection = () => {
   blogButton.classList.add("active-menu");
   crisExp.classList.remove("drop-container-one");
   crisExp.classList.add("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 
 blogButton.addEventListener("click", bloSection);
@@ -138,6 +158,8 @@ const confSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 confButton.addEventListener("click", confSect);
 
@@ -160,6 +182,8 @@ const bioSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 bioButton.addEventListener("click", bioSect);
 
@@ -182,6 +206,8 @@ const tallSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 
 tallButton.addEventListener("click", tallSect);
@@ -207,6 +233,8 @@ const terSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 
 terButton.addEventListener("click", terSect);
@@ -230,6 +258,8 @@ const tvSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 
 tvButton.addEventListener("click", tvSect);
@@ -253,6 +283,8 @@ const confsSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 confsButton.addEventListener("click", confsSect);
 
@@ -275,6 +307,8 @@ const biosSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 biosButton.addEventListener("click", biosSect);
 
@@ -297,6 +331,8 @@ const tallsSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 
 tallsButton.addEventListener("click", tallsSect);
@@ -322,6 +358,8 @@ const tersSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 
 tersButton.addEventListener("click", tersSect);
@@ -345,6 +383,8 @@ const tvsSect = () => {
   blogButton.classList.remove("active-menu");
   crisExp.classList.add("drop-container-one");
   crisExp.classList.remove("drop-container-off");
+  courseVideo.load();
+  principalVideo.load();
 };
 
 tvsButton.addEventListener("click", tvsSect);
@@ -531,50 +571,24 @@ const developeBlog = () => {
 
 developeButton.addEventListener("click", developeBlog);
 
-/*jQuery("html").bind("click", function(e) {
-  if (jQuery(e.target).closest(".navbar").length == 0) {
-    // click happened outside of .navbar, so hide
-    var opened = jQuery(".navbar-collapse").hasClass("collapse in");
-    if (opened === true) {
-      jQuery(".navbar-collapse").collapse("hide");
-    }
-  }
+principalVideo.addEventListener("ended", function () {
+  this.currentTime = 0;
+  principalVideo.load();
 });
 
-/*$(document).ready(function() {
-  $(document).click(function(event) {
-    var clickover = $(event.target);
-    var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
-    if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-      $("button.navbar-toggle").click();
-    }
-  });
+courseVideo.addEventListener("ended", function () {
+  this.currentTime = 0;
+  courseVideo.load();
 });
 
-/*const principalMenu = document.getElementById("principal-menu");
-const ariaExpanded = principalMenu.getAttribute("aria-expanded"); // fruitCount = '12'
-const burgerButton = document.getElementById("prueba");
-// 'Setting' data-attributes using setAttribute
-
-const openData = () => {
-  alert("ayuda");
+/*const videoPlaying = () => {
+  courseVideo.play();
+  //principalVideo.load();
 };
+coursesButton.addEventListener("click", videoPlaying);
 
-burgerButton.addEventListener("click", openData);
-/*burgerButton.addEventListener("click", event => {
-  event.preventDefault();
-  if (principalMenu.getAttribute("aria-expanded") === "true")
-    principalMenu.classList.remove("show");
-  principalMenu.classList.add("collapsed");
-
-   if (principalMenu.getAttribute("aria-expanded") === "true") {
-    burgerButton.setAttribute("data-toggle", "collapsed");  
-});*/
-
-//principalMenu.setAttribute("data-fruit", "7");
-
-/*$("#prueba").click(function() {
-  if ($(".navbar-collapse").attr("aria-expanded") === "true") {
-    $("#principal-menu").removeClass("show");
-  }
-});*/
+const videoPlayOne = () => {
+  //courseVideo.load();
+  principalVideo.play();
+};
+principalButton.addEventListener("click", videoPlayOne);*/
